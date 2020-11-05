@@ -1,0 +1,33 @@
+<!-- Реализуйте валидацию форм. Правила валидации: email, телефон, дата, домен. -->
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<meta charset="utf-8"> 
+	<title>Задача 1</title>
+	<link rel="stylesheet" type="text/css" href="checkformat/checkformat.css">
+	<style>
+		#anketa {
+			weigth: 100px;
+		}
+		input {
+			margin: 10px;
+		}
+	</style>
+	<script src="jquery/jquery-3.5.1.min.js"></script>
+	<script src="checkformat/checkformat.js"></script>	
+	<script> 
+		$(document).ready(function () {
+			$('.anketa').checkformat();
+		});
+	</script> 
+</head> 
+<body> 
+	<div id="anketa">
+		<input type="text" class="anketa" data-type="email" placeholder="E-mail"><br>
+		<input type="text" class="anketa" data-type="phone" placeholder="Phone"><br>
+		<input type="text" class="anketa" data-type="url" placeholder="URL"><br>
+		<input type="text" class="anketa" data-type="date" placeholder="Date"><br>
+	</div>
+</body> 
+</html>
